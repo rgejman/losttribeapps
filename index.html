@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <script type="text/javascript" src="lib/jquery/jquery.js"></script>
+        <script type="text/javascript" src="lib/thickbox/thickbox.js"></script>
+        <style type="text/css">
+@import "lib/thickbox/thickbox.css";
+
+body {
+    background: #111;
+    font-family: "Trebuchet MS", "Trebuchet", sans-serif;
+    color: #aaa;
+}
+
+a {
+    text-decoration: none;
+    color: #66f;
+    font-weight: bold;
+}
+
+
+#title, #gallery, #description, #acknowledgements, #credits, #dlbutton, #press {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 3em;
+    width: 600px;
+}
+
+#title p {
+    font-size: 1.2em;
+}
+
+#dlbutton {
+    text-align: center;
+}
+
+#dlbutton a img {
+    border: none;
+}
+
+#gallery {
+    margin-top: 3em;
+    text-align: center;
+    margin-bottom: 3em;
+    background: #000;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: solid #889;
+    border-width: 2px 0;
+}
+
+#gallery a img {
+    border: none;
+}
+
+#gallery a {
+    text-decoration: none;
+}
+
+#description, #acknowledgements, #credits, #press {
+    width: 600px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#credits {
+    text-align: center;
+    margin-top: 5em;
+}
+
+#credits h2 {
+    margin-bottom: .3em;
+}
+
+.hidden {
+    display: none;
+}
+
+p.text {
+    margin-bottom: 1.6em;
+    line-height: 1.5em;
+    font-size: .9em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:before {
+    content: '\2014\20';
+}
+
+        </style>
+    </head>
+    <body>
+
+        <div id="title">
+            <h1 class="hidden">Synagogues</h1>
+            <img src="images/title.png" alt="Synagogues" title="Synagogues" />
+            <p>The synagogue directory for the iPhone, iPad
+            and wandering Jew</p>
+        </div>
+
+        <div id="dlbutton">
+            <p><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=320928075&mt=8&uo=6">
+                <img src="images/button.png" alt="Install Now" />
+            </a></p>
+        </div>
+
+        <div id="gallery">
+            <a href="screenshots/Map.png" rel="gallery" class="thickbox">
+                <img src="screenshots/Map_t.png" alt="Map" title="Map" />
+            </a>
+            <a href="screenshots/Moriah.png" rel="gallery" class="thickbox">
+                <img src="screenshots/Moriah_t.png" alt="Moriah" title="Moriah" />
+            </a>
+            <a href="screenshots/Near.png" rel="gallery" class="thickbox">
+                <img src="screenshots/Near_t.png" alt="Near" title="Near" />
+            </a>
+            <a href="screenshots/Search.png" rel="gallery" class="thickbox">
+                <img src="screenshots/Search_t.png" alt="Search" title="Search" />
+            </a>
+            <a href="screenshots/Prefs.png" rel="gallery" class="thickbox">
+                <img src="screenshots/Prefs_t.png" alt="Prefs" title="Prefs" />
+            </a>
+        </div>
+
+        <div id="description">
+<p class="text">
+<strong>Need to find a local Jewish community?</strong><br />
+Synagogues uses your current location to find nearby congregations from
+a database of almost 5,000 shuls. Use the built-in map to get a
+panoramic view of all the synagogues in your area and choose one based
+on distance or neighborhood.
+</p><p class="text">
+<strong>Stuck away from home over Shabbos?</strong><br />
+Synagogues allows you to search for shuls before you even get to your
+destination. You can call or email the shul to let them know you're coming, ask
+about Shomer- Shabbat accommodations or check what time services start.
+</p><p class="text">
+<strong>Prefer a traditional service?</strong><br />
+Want an egalitarian minyan?  No problem! Synagogues are listed by denomination.
+</p><p class="text">
+<strong>Prefer a smaller shul?</strong><br />
+Need to know the Rabbi(s) name(s)?  We have painstakingly collected information
+ranging from size and leadership to fax numbers, websites, email addresses and
+more.
+</p><p class="text">
+<strong>Two Jews. Three Opinions.</strong><br />
+If you see an inaccurate listing, you can email us
+from right within the application to let us know.
+</p>
+        </div>
+
+        <div id="press">
+            <p>As seen in:</p>
+            <ul>
+                <li><a href="http://jeffreygoldberg.theatlantic.com/archives/2009/07/iphone_induces_jewish_guilt.php">The Atlantic</a></li>
+                <li><a href="http://www.tabletmag.com/scroll/11871/the-iphones-synagogue-locator">Tablet</a></li>
+                <li><a href="http://bwog.net/2009/07/30/news-jews-can-use">The Bwog</a></li>
+                <li><a href="http://www.oychicago.com/blog.aspx?id=3622">Oy Chicago</a></li>
+            </ul>
+        </div>
+
+        <div id="acknowledgements">
+            Torah icon based on a photo by <a
+                href="http://commons.wikimedia.org/wiki/File:K%C3%B6ln-Tora-und-Innenansicht-Synagoge-Glockengasse-040.JPG">
+                Willy Horsch</a>.<br />
+             Some icons by <a href="http://glyphish.com">Joseph Wain</a>.</p>
+        </div>
+
+        <div id="credits">
+            <h2>Brought to you by</h2>
+            <p><img src="images/logo.png" class="logo" /></p>
+            <p>A <a href="http://ron.gejman.com">Ron Gejman</a> and <a
+                href="http://jacobandreas.net/">Jacob Andreas</a> Production</p>
+        </div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9949390-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+    </body>
+</html>
